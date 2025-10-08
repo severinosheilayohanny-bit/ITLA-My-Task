@@ -1,0 +1,24 @@
+﻿
+//Sheila Severino
+//Matricula: 2024-1693
+
+using System;
+
+public class VariableExample
+{
+    public static void Main(string[] args)
+    {
+        string myname = "Sheila Severino";
+        int myage = 25;
+        double mygrade = 8.75;
+        char favoriteletter = 'S';
+        bool imadult = true;
+
+        Console.WriteLine("--- Homework Examples ---");
+        Console.WriteLine($"Student Name: {myname}");
+        Console.WriteLine($"Student Count in the classroom: {myage}");
+        Console.WriteLine($"Final Grade of the student: {mygrade}");
+        Console.WriteLine($"Assigned Class Group: {favoriteletter}");
+        Console.WriteLine($"Is the student an adult?: {imadult}");
+    }
+}

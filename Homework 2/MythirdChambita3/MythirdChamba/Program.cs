@@ -4,30 +4,45 @@
     Programacion I
 */
 
-using System;
+uusing System;
 
-public class EvenorOdd
+public class Evenorodd
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("--- Detecting if is even or odd ---");
+        Console.WriteLine("--- Detecting Even or Odd ---");
+
+        Console.WriteLine("Please, mi loco, introduce a NUMBER");
+
+        string firsttext = Console.ReadLine();
+
+        int usernumber;
+
+        //I use this to try and convert the text to number and for the code to work properly.
+        if (int.TryParse(firsttext, out usernumber))
+        {
+            //This is basic to know if the number inserted before is even or odd
+            if (usernumber % 2 == 0)
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine($"The number {usernumber} is Even, verygud mi loco");
+            }
+            else
+            {
+                Console.WriteLine(" ");
+                Console.WriteLine($"The number {usernumber} is ODD");
+            }
+        }
+        else
+        {
+            //If the user introduce something that is not a number it will come to this
+            Console.WriteLine(" ");
+            Console.WriteLine("Error: That is invalid, is not a number, how will I know if is Even or Odd :/");
+        }
+
         Console.WriteLine(" ");
 
-        Console.WriteLine("Please, mi loco, introduce a NUMBER: ");
-
-        //Here I convert the string input to an integer, is an easy way to do it
-        int usernumber = int.Parse(Console.ReadLine()!);
-
-        //This is the ternary operator, is like an if else but in one line, i like that more, is more clean
-        string Result = (usernumber % 2 == 0) ? "Even" : "Odd";
-
-        Console.WriteLine(" ");
-        Console.WriteLine($"The number {usernumber} is {Result}.");
-
-        Console.WriteLine(" ");
-
-        //This is just to make the console wait before closing, is a good practice
-        Console.WriteLine("Press any key to go out brother ;)");
+        Console.WriteLine("Press any key to go out. Thank you for being here mi loco...");
         Console.ReadKey();
     }
 }
