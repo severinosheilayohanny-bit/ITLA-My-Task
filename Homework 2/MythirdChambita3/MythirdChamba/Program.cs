@@ -1,5 +1,5 @@
 ﻿/*
-    Sheila Severino
+    Sheila Severino.
     Matricula: 2024-1693
     Programacion I
 */
