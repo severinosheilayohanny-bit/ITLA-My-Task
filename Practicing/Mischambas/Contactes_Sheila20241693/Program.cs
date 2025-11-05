@@ -1,5 +1,5 @@
 ﻿// Sheila Severino (2024-1693)
-// Proyecto: Agenda de Contactes
+// Project: Contactes List
 
 Console.WriteLine("Welcome to my contact List\n");
 
